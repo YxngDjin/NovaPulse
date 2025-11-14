@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+
+
+
+@theme {
+  --color-bg: #000000;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: ##919191;
+  --font-inter: 'Inter';
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-inter);
+  padding: 1rem 7rem 0;
+}
+
+@layer components {
+  #navbar {
+    @apply flex justify-center items-center;
+  }
+}
