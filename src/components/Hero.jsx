@@ -5,7 +5,7 @@ const Hero = () => {
 
   return (
     <section id='hero'>
-        <div className='flex w-full'>
+        <div className='flex h-screen relative w-full'>
                 <img 
                     src='/Hero.svg'
                     className='w-full z-20 abs-center'
@@ -32,7 +32,7 @@ const Hero = () => {
                     </p>
                 </div>
                 <div>
-                    <button className='text-white pointer-cursor hover:text-gray-500 font-semibold text-2xl w-[300px] py-6 bg-gradient-btn rounded-xl mt-5'>
+                    <button className='text-white cursor-pointer hover:text-gray-500 font-semibold text-2xl w-[300px] py-6 bg-gradient-btn rounded-xl mt-5'>
                         Entdecke Synthesizer
                     </button>
                 </div>

@@ -6,7 +6,7 @@ const Navbar = () => {
     <section id='navbar'>
 
 
-      <div className='flex w-full items-center justify-between'>
+      <div className='flex w-full relative z-50 items-center gap-5 justify-between'>
         <div>
             <img 
                 src='/logo.svg'
@@ -31,12 +31,15 @@ const Navbar = () => {
                 <img 
                     src='/icons/bag.svg'
                     alt='card'
+                    className='md:w-8 md:h-8 w-6 h-6'
                 />
             </button>
             <button>
                 <img 
                     src='/icons/search.svg'
                     alt='search'
+
+                    className='md:w-8 md:h-8 w-6 h-6' 
                 />
             </button>
         </div>
