@@ -7,12 +7,12 @@ const Hero = () => {
     <section id='hero'>
         <div className='flex w-full'>
                 <img 
-                    src='Hero.svg'
-                    className='w-full z-10 abs-center'
+                    src='/Hero.svg'
+                    className='w-full z-20 abs-center'
                 />
                 <img 
                     src='/Stars.svg'
-                    className='hidden md:block right-1 absolute z-1'
+                    className='hidden md:block right-1 absolute z-10'
                 />
         </div>
         <div className='absolute z-30 md:bottom-30 md:left-40 md:text-left text-center bottom-30'>
@@ -27,13 +27,13 @@ const Hero = () => {
                 />
                 <div>
                     <p className='text-gray-500 mt-3'>
-                        Minimalistischer Synthesozer. <br/>
+                        Minimalistischer Synthesizer. <br/>
                         Pure Inspiration.
                     </p>
                 </div>
                 <div>
                     <button className='text-white pointer-cursor hover:text-gray-500 font-semibold text-2xl w-[300px] py-6 bg-gradient-btn rounded-xl mt-5'>
-                        Endecke Synthesizer
+                        Entdecke Synthesizer
                     </button>
                 </div>
         </div>

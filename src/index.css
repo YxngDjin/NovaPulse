@@ -6,7 +6,7 @@
 @theme {
   --color-bg: #000000;
   --color-text-primary: #FFFFFF;
-  --color-text-secondary: ##919191;
+  --color-text-secondary: #919191;
   --font-inter: 'Inter';
   --color-gradient-btn: linear-gradient(-112deg, rgba(236, 93, 205, 0.1) 0%, rgba(180, 55, 222, 0.67) 47%, rgba(236, 93, 205, 0.1) 100%);
 }
