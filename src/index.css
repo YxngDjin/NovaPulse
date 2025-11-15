@@ -9,6 +9,7 @@
   --color-text-secondary: #919191;
   --font-inter: 'Inter';
   --color-gradient-btn: linear-gradient(-112deg, rgba(236, 93, 205, 0.1) 0%, rgba(180, 55, 222, 0.67) 47%, rgba(236, 93, 205, 0.1) 100%);
+  --inset-shadow-card: inset 0px -10px 6px rgba(255, 113, 170, 0.2), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
 }
 
 html {
@@ -66,4 +67,14 @@ html {
   #hero {
     @apply flex w-full;
   }
+
+  #video-scroll {
+    @apply flex items-center relative justify-center w-full py-6 px-40;
+    
+    .box {
+      @apply max-w-xs absolute z-50;
+
+    }
+  }
+
 }

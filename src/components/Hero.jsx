@@ -15,7 +15,7 @@ const Hero = () => {
                     className='hidden md:block right-1 absolute z-10'
                 />
         </div>
-        <div className='absolute z-30 md:bottom-30 md:left-40 md:text-left text-center bottom-30'>
+        <div className='absolute w-full z-30 md:bottom-30 md:left-40 md:text-left text-center bottom-30'>
                 <TextType 
                     text={["The Rhythm of Tomorrow"]}
                     typingSpeed={75}

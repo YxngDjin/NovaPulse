@@ -1,4 +1,4 @@
-const navItems = [
+export const navItems = [
     {
         id: 1,
         name: 'Home',
@@ -25,5 +25,26 @@ const navItems = [
         link: '/support'
     }
 ]
-
-export default navItems
+export const features = [
+    {
+        id: 1,
+        highlight: "Samples",
+        icon: "/icons/Folders.svg",
+        text: "Open Source Sample Packs.",
+        styles: "left-50 top-[20%] opacity-0 translate-y-5"
+    },
+    {
+        id: 2,
+        highlight: "Audio",
+        icon: "/icons/Volume_Max.svg",
+        text: "Unlimited Audio Options.",
+        styles: "right-50 top-[40%] opacity-0 translate-y-5"
+    },
+    {
+        id: 3,
+        highlight: "Everywhere",
+        icon: "/icons/Circle_Check.svg",
+        text: "Unlimited Integrations.",
+        styles: "left-50 top-[60%] opacity-0 translate-y-5"
+    }
+]
