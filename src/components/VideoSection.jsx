@@ -2,7 +2,6 @@
 import { gsap } from 'gsap'
 import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
-gsap.registerPlugin(useGSAP);
 
 const VideoSection = () => {
     const headerRef = useRef(null)
@@ -28,21 +27,18 @@ const VideoSection = () => {
 
         gsap.fromTo(videoRef.current, {
             opacity: 0,
-            y: -100,
+            x: -100,
         },{
             opacity: 1,
-            y: 1,
+            x: 0,
             duration: 1,
             ease: "power1.inOut",
             scrollTrigger: {
                 trigger: videoRef.current,
-                start: "center center",
+                start: "top center",
+                once: true,
                 onEnter: () => {
-                    setTimeout(() => {
-                        if(videoRef.current) {
-                            videoRef.current.play()
-                        }
-                    }, 100)
+                    videoRef.current.play();
                 }
             }
         })
@@ -51,20 +47,18 @@ const VideoSection = () => {
 
   return (
     <section id='section'>
-        <div className='h-screen relative w-full'>
-            <p ref={headerRef} className='absolute left-1/9 text-5xl font-semibold top-40 z-20'>
+        <div className='md:h-screen relative w-full z-20'>
+            <p ref={headerRef} className='md:absolute left-1/9 text-5xl font-semibold top-40 z-20'>
                 Designed for Sound. <br/>
                 Build for Flow.
             </p>
             <video
-             src="/videos/0.mp4" 
-             autoPlay
+             src="/videos/2.mp4" 
              muted
              playsInline
              ref={videoRef}
-             className='scale-70'
             />
-            <p ref={secondaryRef} className='absolute bottom-20 right-50 text-text-secondary'>
+            <p ref={secondaryRef} className='md:absolute bottom-20 right-50 text-text-secondary'>
                 Minimalistische Instrumente, <br />
                 die deinen kreativen Prozess verstärken.
             </p>
