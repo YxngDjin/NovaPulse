@@ -8,6 +8,7 @@
   --color-text-primary: #FFFFFF;
   --color-text-secondary: ##919191;
   --font-inter: 'Inter';
+  --color-gradient-btn: linear-gradient(-112deg, rgba(236, 93, 205, 0.1) 0%, rgba(180, 55, 222, 0.67) 47%, rgba(236, 93, 205, 0.1) 100%);
 }
 
 html {
@@ -23,9 +24,22 @@ html {
   .flex-center {
     @apply flex justify-center items-center;
   }
+  
+  .bg-gradient-btn {
+    background-image: var(--color-gradient-btn);
+    box-shadow: inset 0px -4px 4px rgba(255, 113, 170, 0.2),
+      inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .bg-gradient-btn:hover {
+    background-image: var(--color-gradient-btn);
+    box-shadow: inset 0px -4px 4px rgba(255, 113, 170, 0.4),
+      inset 0px 4px 4px rgba(255, 255, 255, 0.5);
+  }
 
   .abs-center {
-    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+    @apply absolute md:top-1/2 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2;
   }
 }
 
@@ -47,5 +61,9 @@ html {
       }
     }
 
+  }
+
+  #hero {
+    @apply flex w-full;
   }
 }
