@@ -31,7 +31,7 @@ html {
 
 @layer components {
   #navbar {
-    @apply flex justify-center px-7 items-center md:px-[500px];
+    @apply flex justify-center px-7 md:pt-2 items-center md:px-[500px];
 
     div {
 
